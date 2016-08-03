@@ -5,7 +5,6 @@ import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -58,36 +57,17 @@ public class RecodeAdapter extends RecyclerView.Adapter<RecodeViewHolder>{
 
         holder.overflow.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                if(eventHandler == null)
+            public void onClick(View view) {
+                if(eventHandler == null) {
                     return;
-                showPopupMenu(holder.overflow);
-            }
-        });
-
-    }
-
-    private void showPopupMenu(View view) {
-        // inflate menu
-        PopupMenu popupMenu = new PopupMenu(mContext, view);
-        MenuInflater inflater = popupMenu.getMenuInflater();
-        inflater.inflate(R.menu.menu_reocode, popupMenu.getMenu());
-        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                int i = item.getItemId();
-                if (i == R.id.action_play) {
-
-                    return true;
-                } else if (i == R.id.action_delete) {
-
-                    return true;
-                } else {
-                    return false;
                 }
+                PopupMenu popupMenu = new PopupMenu(mContext, view);
+                MenuInflater inflater = popupMenu.getMenuInflater();
+                inflater.inflate(R.menu.menu_reocode, popupMenu.getMenu());
+                popupMenu.setOnMenuItemClickListener(eventHandler);
             }
         });
-        popupMenu.show();
+
     }
 
 
@@ -96,6 +76,10 @@ public class RecodeAdapter extends RecyclerView.Adapter<RecodeViewHolder>{
         return mRecodes.size();
     }
 
+    /**
+     *
+     * @param eventHandler 팝업메뉴에 대한 사용자 정의 이벤트 헨들러
+     */
     public void setEventHandler(EventHandler eventHandler) {
         this.eventHandler = eventHandler;
     }
