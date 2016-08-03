@@ -1,0 +1,228 @@
+Observed package id 'add-ons;addon-google_apis-google-23' in inconsistent location 'C:\Users\juniair\AppData\Local\Android\Sdk\add-ons\addon-google_apis-google-23-1' (Expected 'C:\Users\juniair\AppData\Local\Android\Sdk\add-ons\addon-google_apis-google-23')
+Incremental java compilation is an incubating feature.
+:clean
+:app:clean
+:calendarview:clean
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2340Library
+:app:prepareComAndroidSupportAppcompatV72340Library
+:app:prepareComAndroidSupportSupportV42340Library
+:app:prepareComAndroidSupportSupportVectorDrawable2340Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:prePackageMarkerForDebug
+:app:transformClassesWithDexForDebug
+Merged dex #1 (5 defs/15.3KiB)
+Merged dex #2 (330 defs/538.0KiB)
+Merged dex #3 (770 defs/937.1KiB)
+Merged dex #4 (17 defs/48.5KiB)
+Merged dex #5 (29 defs/84.0KiB)
+Merged dex #6 (335 defs/262.9KiB)
+Merged dex #7 (41 defs/6.5KiB)
+Result is 1527 defs/2292.2KiB. Took 0.2s
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:prePackageMarkerForRelease
+:app:transformClassesWithDexForRelease
+Merged dex #1 (5 defs/15.3KiB)
+Merged dex #2 (330 defs/538.0KiB)
+Merged dex #3 (770 defs/937.1KiB)
+Merged dex #4 (17 defs/48.5KiB)
+Merged dex #5 (335 defs/262.9KiB)
+Merged dex #6 (29 defs/83.9KiB)
+Merged dex #7 (41 defs/6.5KiB)
+Result is 1527 defs/2292.1KiB. Took 0.1s
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:compileLint
+:app:lint
+Ran lint on variant debug: 3 issues found
+Ran lint on variant release: 3 issues found
+Wrote HTML report to file:///D:/work/GitHub/AndroidStudioProjects/CustomView/app/build/outputs/lint-results-debug.html
+Wrote XML report to file:///D:/work/GitHub/AndroidStudioProjects/CustomView/app/build/outputs/lint-results-debug.xml
+:app:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:prepareDebugUnitTestDependencies
+:app:compileDebugUnitTestJavaWithJavac
+:app:compileDebugUnitTestJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:processDebugUnitTestJavaRes UP-TO-DATE
+:app:compileDebugUnitTestSources
+:app:mockableAndroidJar
+:app:assembleDebugUnitTest
+:app:testDebugUnitTest
+:app:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:app:preReleaseUnitTestBuild UP-TO-DATE
+:app:prepareReleaseUnitTestDependencies
+:app:compileReleaseUnitTestJavaWithJavac
+:app:compileReleaseUnitTestJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:processReleaseUnitTestJavaRes UP-TO-DATE
+:app:compileReleaseUnitTestSources
+:app:assembleReleaseUnitTest
+:app:testReleaseUnitTest
+:app:test
+:app:check
+:app:build
+:calendarview:preBuild UP-TO-DATE
+:calendarview:preDebugBuild UP-TO-DATE
+:calendarview:compileDebugNdk UP-TO-DATE
+:calendarview:compileLint
+:calendarview:copyDebugLint UP-TO-DATE
+:calendarview:checkDebugManifest
+:calendarview:preDebugAndroidTestBuild UP-TO-DATE
+:calendarview:preDebugUnitTestBuild UP-TO-DATE
+:calendarview:preReleaseBuild UP-TO-DATE
+:calendarview:preReleaseUnitTestBuild UP-TO-DATE
+:calendarview:prepareComAndroidSupportAnimatedVectorDrawable2340Library
+:calendarview:prepareComAndroidSupportAppcompatV72340Library
+:calendarview:prepareComAndroidSupportSupportV42340Library
+:calendarview:prepareComAndroidSupportSupportVectorDrawable2340Library
+:calendarview:prepareDebugDependencies
+:calendarview:compileDebugAidl
+:calendarview:compileDebugRenderscript
+:calendarview:generateDebugBuildConfig
+:calendarview:mergeDebugShaders
+:calendarview:compileDebugShaders
+:calendarview:generateDebugAssets
+:calendarview:mergeDebugAssets
+:calendarview:generateDebugResValues UP-TO-DATE
+:calendarview:generateDebugResources
+:calendarview:mergeDebugResources
+:calendarview:processDebugManifest
+:calendarview:processDebugResources
+:calendarview:generateDebugSources
+:calendarview:incrementalDebugJavaCompilationSafeguard
+:calendarview:compileDebugJavaWithJavac
+:calendarview:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:calendarview:extractDebugAnnotations
+:calendarview:mergeDebugProguardFiles UP-TO-DATE
+:calendarview:packageDebugRenderscript UP-TO-DATE
+:calendarview:packageDebugResources
+:calendarview:processDebugJavaRes UP-TO-DATE
+:calendarview:transformResourcesWithMergeJavaResForDebug
+:calendarview:transformClassesAndResourcesWithSyncLibJarsForDebug
+:calendarview:mergeDebugJniLibFolders
+:calendarview:transformNative_libsWithMergeJniLibsForDebug
+:calendarview:transformNative_libsWithSyncJniLibsForDebug
+:calendarview:bundleDebug
+:calendarview:compileDebugSources
+:calendarview:assembleDebug
+:calendarview:compileReleaseNdk UP-TO-DATE
+:calendarview:copyReleaseLint UP-TO-DATE
+:calendarview:checkReleaseManifest
+:calendarview:prepareReleaseDependencies
+:calendarview:compileReleaseAidl
+:calendarview:compileReleaseRenderscript
+:calendarview:generateReleaseBuildConfig
+:calendarview:mergeReleaseShaders
+:calendarview:compileReleaseShaders
+:calendarview:generateReleaseAssets
+:calendarview:mergeReleaseAssets
+:calendarview:generateReleaseResValues UP-TO-DATE
+:calendarview:generateReleaseResources
+:calendarview:mergeReleaseResources
+:calendarview:processReleaseManifest
+:calendarview:processReleaseResources
+:calendarview:generateReleaseSources
+:calendarview:incrementalReleaseJavaCompilationSafeguard
+:calendarview:compileReleaseJavaWithJavac
+:calendarview:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:calendarview:extractReleaseAnnotations
+:calendarview:mergeReleaseProguardFiles UP-TO-DATE
+:calendarview:packageReleaseRenderscript UP-TO-DATE
+:calendarview:packageReleaseResources
+:calendarview:processReleaseJavaRes UP-TO-DATE
+:calendarview:transformResourcesWithMergeJavaResForRelease
+:calendarview:transformClassesAndResourcesWithSyncLibJarsForRelease
+:calendarview:mergeReleaseJniLibFolders
+:calendarview:transformNative_libsWithMergeJniLibsForRelease
+:calendarview:transformNative_libsWithSyncJniLibsForRelease
+:calendarview:bundleRelease
+:calendarview:compileReleaseSources
+:calendarview:assembleRelease
+:calendarview:assemble
+:calendarview:lint
+Ran lint on variant debug: 28 issues found
+Ran lint on variant release: 28 issues found
+Wrote HTML report to file:///D:/work/GitHub/AndroidStudioProjects/CustomView/calendarview/build/outputs/lint-results-debug.html
+Wrote XML report to file:///D:/work/GitHub/AndroidStudioProjects/CustomView/calendarview/build/outputs/lint-results-debug.xml
+:calendarview:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:calendarview:prepareDebugUnitTestDependencies
+:calendarview:compileDebugUnitTestJavaWithJavac
+:calendarview:compileDebugUnitTestJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:calendarview:processDebugUnitTestJavaRes UP-TO-DATE
+:calendarview:compileDebugUnitTestSources
+:calendarview:mockableAndroidJar
+:calendarview:assembleDebugUnitTest
+:calendarview:testDebugUnitTest
+:calendarview:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:calendarview:prepareReleaseUnitTestDependencies
+:calendarview:compileReleaseUnitTestJavaWithJavac
+:calendarview:compileReleaseUnitTestJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:calendarview:processReleaseUnitTestJavaRes UP-TO-DATE
+:calendarview:compileReleaseUnitTestSources
+:calendarview:assembleReleaseUnitTest
+:calendarview:testReleaseUnitTest
+:calendarview:test
+:calendarview:check
+:calendarview:build
+:calendarview:generatePomFileForMavenPublication
+:calendarview:mavenAndroidJavadocsJar
+:calendarview:mavenAndroidSourcesJar
+:calendarview:publishMavenPublicationToMavenLocal
+:calendarview:bintrayUpload FAILED
+
+BUILD FAILED
+
+Total time: 35.541 secs

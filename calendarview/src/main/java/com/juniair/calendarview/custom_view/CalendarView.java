@@ -127,7 +127,6 @@ public class CalendarView extends LinearLayout {
                 updateCalendar();
             }
         });
-
         // subtract one month and refresh UI
         btnPrev.setOnClickListener(new OnClickListener()
         {
@@ -167,29 +166,16 @@ public class CalendarView extends LinearLayout {
         // move calendar backwards to the beginning of the week
         calendar.add(Calendar.DAY_OF_MONTH, -monthBeginningCell);
 
-        // 지난달 일부분
-        for(int i = 0; i < monthBeginningCell; i++) {
-            DailySchedule schedule = new DailySchedule();
-            schedule.setDate(calendar.getTime());
-            schedule.setMonth(false);
-            cells.add(schedule);
-            calendar.add(Calendar.DAY_OF_MONTH, 1);
-        }
-
-        // 이번달
-        for(int i = 0; i < monthLastingCell; i++) {
-            DailySchedule schedule = new DailySchedule();
-            schedule.setDate(calendar.getTime());
-            schedule.setMonth(true);
-            cells.add(schedule);
-            calendar.add(Calendar.DAY_OF_MONTH, 1);
-        }
-
-        // 다음달 일부분
         while (cells.size() < DAYS_COUNT) {
             DailySchedule schedule = new DailySchedule();
             schedule.setDate(calendar.getTime());
-            schedule.setMonth(false);
+
+            if( monthBeginningCell <= cells.size() && cells.size() < monthLastingCell) {
+                schedule.setMonth(true);
+            } else {
+                schedule.setMonth(false);
+            }
+
             cells.add(schedule);
             calendar.add(Calendar.DAY_OF_MONTH, 1);
         }
@@ -226,32 +212,20 @@ public class CalendarView extends LinearLayout {
         // move calendar backwards to the beginning of the week
         calendar.add(Calendar.DAY_OF_MONTH, -monthBeginningCell);
 
-        // 지난달 일부분
-        for(int i = 0; i < monthBeginningCell; i++) {
-            DailySchedule schedule = new DailySchedule();
-            schedule.setDate(calendar.getTime());
-            schedule.setMonth(false);
-            cells.add(schedule);
-            calendar.add(Calendar.DAY_OF_MONTH, 1);
-        }
-
-        // 이번달
-        for(int i = 0; i < monthLastingCell; i++) {
-            DailySchedule schedule = new DailySchedule();
-            schedule.setDate(calendar.getTime());
-            schedule.setMonth(true);
-            cells.add(schedule);
-            calendar.add(Calendar.DAY_OF_MONTH, 1);
-        }
-
-        // 다음달 일부분
         while (cells.size() < DAYS_COUNT) {
             DailySchedule schedule = new DailySchedule();
             schedule.setDate(calendar.getTime());
-            schedule.setMonth(false);
+
+            if( monthBeginningCell <= cells.size() && cells.size() < monthLastingCell) {
+                schedule.setMonth(true);
+            } else {
+                schedule.setMonth(false);
+            }
+
             cells.add(schedule);
             calendar.add(Calendar.DAY_OF_MONTH, 1);
         }
+
 
         // update grid
         grid.setAdapter(new CalendarAdapter(getContext(), cells));
