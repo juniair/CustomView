@@ -45,8 +45,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_below="@id/thumbnail"
                 android:layout_marginTop="@dimen/ic_recode_overflow_margin_top"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_dots" />
+                android:scaleType="centerCrop"/>
 
         </RelativeLayout>
 

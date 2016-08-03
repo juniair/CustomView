@@ -1,26 +1,32 @@
 package com.juniair.recodecardview.model;
 
 /**
- * Created by juniair on 2016-08-03.
+ * Class : Recode <br/>
+ *
  */
 public class Recode {
-    private String name;
+    private String recodeTitle;
     private String thumbnailURL;
 
     public Recode() {
     }
 
-    public Recode(String name, String thumbnailURL) {
-        this.name = name;
+    /**
+     *
+     * @param recodeTitle 동영상 제목
+     * @param thumbnailURL  동영상 URL
+     */
+    public Recode(String recodeTitle, String thumbnailURL) {
+        this.recodeTitle = recodeTitle;
         this.thumbnailURL = thumbnailURL;
     }
 
-    public String getName() {
-        return name;
+    public String getRecodeTitle() {
+        return recodeTitle;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setRecodeTitle(String recodeTitle) {
+        this.recodeTitle = recodeTitle;
     }
 
     public String getThumbnailURL() {

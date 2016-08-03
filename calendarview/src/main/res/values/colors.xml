@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<!-- calendar view -->
-	<color name="today">#4b82ff</color>
-	<color name="greyed_out">#c7c7c7</color>
+	<color recodeTitle="today">#4b82ff</color>
+	<color recodeTitle="greyed_out">#c7c7c7</color>
 
-	<color name="summer">#44eebd82</color>
-	<color name="fall">#44d8d27e</color>
-	<color name="winter">#44a1c1da</color>
-	<color name="spring">#448da64b</color>
+	<color recodeTitle="summer">#44eebd82</color>
+	<color recodeTitle="fall">#44d8d27e</color>
+	<color recodeTitle="winter">#44a1c1da</color>
+	<color recodeTitle="spring">#448da64b</color>
 </resources>

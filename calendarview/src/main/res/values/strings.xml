@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">CustomView</string>
-    <string name="action_settings">Settings</string>
+    <string recodeTitle="app_name">CustomView</string>
+    <string recodeTitle="action_settings">Settings</string>
 </resources>

@@ -52,7 +52,7 @@ public class RecodeAdapter extends RecyclerView.Adapter<RecodeViewHolder>{
     @Override
     public void onBindViewHolder(final RecodeViewHolder holder, int position) {
         Recode recode = mRecodes.get(position);
-        holder.title.setText(recode.getName());
+        holder.title.setText(recode.getRecodeTitle());
         Glide.with(mContext).load(recode.getThumbnailURL()).into(holder.thumbnail);
 
         holder.overflow.setOnClickListener(new View.OnClickListener() {
