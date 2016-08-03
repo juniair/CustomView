@@ -67,7 +67,6 @@ public class RecodeAdapter extends RecyclerView.Adapter<RecodeViewHolder>{
                 popupMenu.setOnMenuItemClickListener(eventHandler);
             }
         });
-
     }
 
 
@@ -77,8 +76,12 @@ public class RecodeAdapter extends RecyclerView.Adapter<RecodeViewHolder>{
     }
 
     /**
+     * 이벤트 핸들러를 설정한다.
+     * 사용 예시<br/>
+     * recodeAdapter.setEventHandler(new EvnetHandler() {....});
+     * @param eventHandler 팝업메뉴에 대한 사용자 정의 이벤트 헨들러<br/>
      *
-     * @param eventHandler 팝업메뉴에 대한 사용자 정의 이벤트 헨들러
+     *
      */
     public void setEventHandler(EventHandler eventHandler) {
         this.eventHandler = eventHandler;

@@ -25,6 +25,10 @@ public class Recode {
         return recodeTitle;
     }
 
+    /**
+     *
+     * @param recodeTitle 동영상 제목
+     */
     public void setRecodeTitle(String recodeTitle) {
         this.recodeTitle = recodeTitle;
     }
@@ -33,6 +37,10 @@ public class Recode {
         return thumbnailURL;
     }
 
+    /**
+     *
+     * @param thumbnailURL 동영상 썸네일 URL
+     */
     public void setThumbnailURL(String thumbnailURL) {
         this.thumbnailURL = thumbnailURL;
     }
