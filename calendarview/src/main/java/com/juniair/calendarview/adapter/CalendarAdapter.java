@@ -13,18 +13,21 @@ import com.juniair.calendarview.R;
 import com.juniair.calendarview.model.DailySchedule;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class CalendarAdapter extends ArrayAdapter<DailySchedule>
 {
     // for view inflation
     private LayoutInflater inflater;
     private Context context;
+    private HashSet<DailySchedule> events;
 
-    public CalendarAdapter(Context context, ArrayList<DailySchedule> days)
+    public CalendarAdapter(Context context, ArrayList<DailySchedule> days, HashSet<DailySchedule> events)
     {
         super(context, R.layout.control_calendar_day, days);
         this.context = context;
         inflater = LayoutInflater.from(context);
+        this.events = events;
     }
 
 
@@ -41,8 +44,14 @@ public class CalendarAdapter extends ArrayAdapter<DailySchedule>
 
         // if this day has an event, specify event image
         view.setBackgroundResource(0);
-        if(schedule.getCommit() != null) {
-            view.setBackgroundResource(R.drawable.reminder);
+
+        if(events != null) {
+            for(DailySchedule eventSchedule : events) {
+                if(schedule.getDate() == eventSchedule.getDate()
+                        && eventSchedule.getCommit() != null) {
+                    view.setBackgroundResource(R.drawable.reminder);
+                }
+            }
         }
 
         // clear styling
